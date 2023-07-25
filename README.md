@@ -12,7 +12,12 @@ Multi-Channel nRF24L01+ Library for ARM Cortex M (STM32) and AVR microcontroller
 - #### Program Language: C
 
 - #### Properties:
+               - Support fully nrf24 configuration  
+               - Support Interrupt
+               - Support for 6 receiving addresses at the same time (6 Pipeline)
 
+                 and more features...
+  
 ### Initialization and de-initialization functions:
 ```c++
 void NRF24L01_RxInit(uint8_t Channel, NRF24L01_DataRateTypeDef DataRate, uint16_t Timeout);
