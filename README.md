@@ -85,6 +85,6 @@ uint8_t NRF24L01_GetStatus(uint16_t Timeout);
 - [x] STM32F1  
 - [x] STM32F4  
 - [x] ESP32-WROOM  
-- [x] AVR  
+- [ ] AVR  
 
 #### Developer: Majid Derhambakhsh
