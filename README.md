@@ -3,7 +3,7 @@
 Multi-Channel nRF24L01+ Library for ARM Cortex M (STM32) and AVR microcontrollers
 
 ## Release
-### Version: 1.0.0
+### Version: 1.1.0
 
 - #### Type: Embedded Software.
 
@@ -19,6 +19,9 @@ Multi-Channel nRF24L01+ Library for ARM Cortex M (STM32) and AVR microcontroller
                - Multi pipeline support 
 
                  and more features...
+
+- #### Changelog:
+               - Add: Return Transmit Status in NRF24L01_TxIRQHandle  
 
 ## Overview 
 ### Initialization and de-initialization functions:
