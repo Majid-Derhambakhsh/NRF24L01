@@ -2,7 +2,7 @@
 ------------------------------------------------------------------------------
 ~ File   : nrf24l01.h
 ~ Author : Majid Derhambakhsh
-~ Version: V1.0.0
+~ Version: V1.1.0
 ~ Created: 01/27/2023 10:00:00 PM
 ~ Brief  :
 ~ Support:
@@ -964,7 +964,7 @@ void NRF24L01_SetRFAirDataRate(NRF24L01_DataRateTypeDef bps, uint16_t Timeout);
  *         Timeout : Timeout duration
  *         
  * Returns: 
- *         -
+ *         Status : Transmit status
  *         
  * Example: 
  *         ISR(EXTI0) // External Interrupt 0 is connected to NRF24L01 IRQ pin
@@ -974,7 +974,7 @@ void NRF24L01_SetRFAirDataRate(NRF24L01_DataRateTypeDef bps, uint16_t Timeout);
  *         ...
  *         
  */
-void NRF24L01_TxIRQHandle(uint16_t Timeout);
+uint8_t NRF24L01_TxIRQHandle(uint16_t Timeout);
 
 /* ............................................................. */
 /*
