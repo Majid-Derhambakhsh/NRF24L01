@@ -2,7 +2,7 @@
 ------------------------------------------------------------------------------
 ~ File   : nrf24l01.c
 ~ Author : Majid Derhambakhsh
-~ Version: V1.0.0
+~ Version: V1.1.0
 ~ Created: 01/27/2023 10:00:00 PM
 ~ Brief  :
 ~ Support:
@@ -677,7 +677,7 @@ void NRF24L01_SetRFAirDataRate(NRF24L01_DataRateTypeDef bps, uint16_t Timeout)
 }
 
 /* ......................... IRQ Handle ........................ */
-void NRF24L01_TxIRQHandle(uint16_t Timeout)
+uint8_t NRF24L01_TxIRQHandle(uint16_t Timeout)
 {
 	
 	/* ------------ Read Status Register ------------ */
@@ -696,6 +696,8 @@ void NRF24L01_TxIRQHandle(uint16_t Timeout)
 		// MAX_RT
 		NRF24L01_ClearMaxRT(Timeout);
 	}
+
+	return txDataSent;
 	
 }
 
